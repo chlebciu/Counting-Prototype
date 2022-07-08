@@ -8109,6 +8109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   j: 0
+  resetbutton: {fileID: 1866685267}
 --- !u!65 &946898819
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13749,7 +13750,6 @@ GameObject:
   - component: {fileID: 1648811353}
   - component: {fileID: 1648811352}
   - component: {fileID: 1648811351}
-  - component: {fileID: 1648811354}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -13822,18 +13822,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -14, y: -90, z: 0}
---- !u!114 &1648811354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1648811350}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48d318e2b6ff2f94e9470fd436a1d98d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1681205104
 GameObject:
   m_ObjectHideFlags: 0
@@ -15022,7 +15010,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1866685266
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15087,8 +15075,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1648811354}
-        m_TargetAssemblyTypeName: Resetgame, Assembly-CSharp
+      - m_Target: {fileID: 946898818}
+        m_TargetAssemblyTypeName: Display, Assembly-CSharp
         m_MethodName: ResetGame
         m_Mode: 1
         m_Arguments:
